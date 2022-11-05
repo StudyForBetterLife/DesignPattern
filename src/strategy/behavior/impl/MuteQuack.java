@@ -1,6 +1,6 @@
-package main.behavior.impl;
+package strategy.behavior.impl;
 
-import main.behavior.QuackBehavior;
+import strategy.behavior.QuackBehavior;
 
 public class MuteQuack implements QuackBehavior {
 

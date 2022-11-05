@@ -1,7 +1,7 @@
-package main.base;
+package strategy.base;
 
-import main.behavior.FlyBehavior;
-import main.behavior.QuackBehavior;
+import strategy.behavior.FlyBehavior;
+import strategy.behavior.QuackBehavior;
 
 public abstract class Duck {
   protected FlyBehavior flyBehavior; // 레퍼런스 변수

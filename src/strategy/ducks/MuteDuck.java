@@ -1,8 +1,8 @@
-package main.ducks;
+package strategy.ducks;
 
-import main.base.Duck;
-import main.behavior.impl.FlyNoWay;
-import main.behavior.impl.MuteQuack;
+import strategy.behavior.impl.FlyNoWay;
+import strategy.behavior.impl.MuteQuack;
+import strategy.base.Duck;
 
 public class MuteDuck extends Duck {
 

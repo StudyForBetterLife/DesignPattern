@@ -1,11 +1,11 @@
-package main;
+package strategy;
 
-import main.base.Duck;
-import main.behavior.impl.FlyRocketPowered;
-import main.ducks.MallardDuck;
-import main.ducks.MuteDuck;
+import strategy.base.Duck;
+import strategy.behavior.impl.FlyRocketPowered;
+import strategy.ducks.MallardDuck;
+import strategy.ducks.MuteDuck;
 
-public class App {
+public class StrategyPattern {
     public static void main(String[] args) {
         Duck mallardDuck = new MallardDuck();
         mallardDuck.display(); // display : MallardDuck

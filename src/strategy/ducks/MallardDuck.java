@@ -1,8 +1,8 @@
-package main.ducks;
+package strategy.ducks;
 
-import main.base.Duck;
-import main.behavior.impl.FlyWithWings;
-import main.behavior.impl.LoudQuack;
+import strategy.behavior.impl.FlyWithWings;
+import strategy.behavior.impl.LoudQuack;
+import strategy.base.Duck;
 
 public class MallardDuck extends Duck {
 
