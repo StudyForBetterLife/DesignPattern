@@ -28,6 +28,7 @@ public class WeatherData implements Subject {
     notifyObservers();
   }
 
+
   @Override
   public void registerObserver(Observer observer) {
     observers.add(observer);
@@ -42,7 +43,7 @@ public class WeatherData implements Subject {
   public void notifyObservers() {
     for (final Observer observer : observers) {
       // (push: subject -> observer) subject 클래스에서 observer들에게 데이터를 push 해준다.
-      // observer.updateByPush(temperatures, humidity, pressure);'
+      // observer.updateByPush(temperatures, humidity, pressure);
 
       // (pull : observer <- subject) observer들이 각자 subject의 데이터를 pull한다.
       // push보단 pull이 좋다.
