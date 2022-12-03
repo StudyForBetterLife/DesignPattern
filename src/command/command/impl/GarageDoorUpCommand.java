@@ -3,10 +3,10 @@ package command.command.impl;
 import command.command.Command;
 import command.receiver.GarageDoor;
 
-public class GarageDoorOpenCommand implements Command {
-    GarageDoor garageDoor;
+public class GarageDoorUpCommand implements Command {
+    private final GarageDoor garageDoor;
 
-    public GarageDoorOpenCommand(GarageDoor garageDoor) {
+    public GarageDoorUpCommand(GarageDoor garageDoor) {
         this.garageDoor = garageDoor;
     }
 
