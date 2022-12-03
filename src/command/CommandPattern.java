@@ -2,6 +2,7 @@ package command;
 
 import command.command.impl.*;
 import command.invoker.RemoteControl;
+import command.invoker.RemoteControlWithUndo;
 import command.invoker.SimpleRemoteControl;
 import command.receiver.GarageDoor;
 import command.receiver.Light;
@@ -13,7 +14,8 @@ import command.receiver.Stereo;
 public class CommandPattern {
     public static void main(String[] args) {
 //        simpleRemoteControl();
-        remoteControl();
+//        remoteControl();
+        remoteControlWithUndo();
     }
 
     private static void simpleRemoteControl() {
@@ -73,9 +75,10 @@ public class CommandPattern {
         StereoOnWithCDCommand stereoOnWithCDCommand = new StereoOnWithCDCommand(livingRoomStereo);
         StereoOffCommand stereoOffCommand = new StereoOffCommand(livingRoomStereo);
 
-        remoteControl.setCommand(0, livingRoomLight::on, livingRoomLight::off);
-        remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
-        remoteControl.setCommand(2, garageDoor::up, garageDoor::down);
+        // 람다식은 메소드가 오직 한개일 때에만 사용할 수 있다.
+//        remoteControl.setCommand(0, livingRoomLight::on, livingRoomLight::off);
+//        remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
+//        remoteControl.setCommand(2, garageDoor::up, garageDoor::down);
         remoteControl.setCommand(3, stereoOnWithCDCommand, stereoOffCommand);
 
         System.out.println(remoteControl);
@@ -84,5 +87,26 @@ public class CommandPattern {
             remoteControl.onButtonWasPushed(i);
             remoteControl.offButtonWasPushed(i);
         }
+    }
+
+    private static void remoteControlWithUndo() {
+        RemoteControlWithUndo remoteControl = new RemoteControlWithUndo();
+
+        Light livingRoomLight = new Light("Living Room");
+
+        LightOnCommand livingRoomLightOnCommand = new LightOnCommand(livingRoomLight);
+        LightOffCommand livingRoomLightOffCommand = new LightOffCommand(livingRoomLight);
+
+        remoteControl.setCommand(0, livingRoomLightOnCommand, livingRoomLightOffCommand);
+
+        remoteControl.onButtonWasPushed(0);
+        remoteControl.offButtonWasPushed(0);
+        System.out.println(remoteControl);
+
+        remoteControl.undoButtonWasPushed();
+
+        remoteControl.offButtonWasPushed(0);
+        remoteControl.onButtonWasPushed(0);
+        System.out.println(remoteControl);
     }
 }
