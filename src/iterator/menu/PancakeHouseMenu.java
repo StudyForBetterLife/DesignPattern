@@ -1,12 +1,12 @@
 package iterator.menu;
 
-import iterator.iter.Iterator;
-import iterator.iter.impl.PancakeHouseIterator;
+import iterator.menu.vo.MenuItem;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
     private final List<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -25,7 +25,8 @@ public class PancakeHouseMenu {
         return menuItems;
     }
 
+    @Override
     public Iterator<MenuItem> createIterator() {
-        return new PancakeHouseIterator(menuItems);
+        return menuItems.iterator();
     }
 }

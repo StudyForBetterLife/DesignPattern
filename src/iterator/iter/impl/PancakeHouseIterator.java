@@ -1,8 +1,8 @@
 package iterator.iter.impl;
 
-import iterator.iter.Iterator;
-import iterator.menu.MenuItem;
+import iterator.menu.vo.MenuItem;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class PancakeHouseIterator implements Iterator<MenuItem> {

@@ -1,4 +1,4 @@
-package iterator.menu;
+package iterator.menu.vo;
 
 public class MenuItem {
     private String name;

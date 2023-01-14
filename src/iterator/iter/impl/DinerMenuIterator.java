@@ -1,7 +1,8 @@
 package iterator.iter.impl;
 
-import iterator.iter.Iterator;
-import iterator.menu.MenuItem;
+import iterator.menu.vo.MenuItem;
+
+import java.util.Iterator;
 
 public class DinerMenuIterator implements Iterator<MenuItem> {
     private final MenuItem[] menuItems;

@@ -9,7 +9,6 @@ public class IteratorPattern {
         DinerMenu dinerMenu = new DinerMenu();
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         Waitress waitress = new Waitress(dinerMenu, pancakeHouseMenu);
-        waitress.printMenuBefore();
         waitress.printMenuAfter();
     }
 
