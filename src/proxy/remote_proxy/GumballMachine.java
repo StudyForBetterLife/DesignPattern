@@ -1,13 +1,13 @@
-package proxy.gumball;
+package proxy.remote_proxy;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
-import proxy.gumball.state.State;
-import proxy.gumball.state.impl.HasQuarterState;
-import proxy.gumball.state.impl.NoQuarterState;
-import proxy.gumball.state.impl.SoldOutState;
-import proxy.gumball.state.impl.SoldState;
-import proxy.gumball.state.impl.WinnerState;
+import proxy.remote_proxy.state.State;
+import proxy.remote_proxy.state.impl.HasQuarterState;
+import proxy.remote_proxy.state.impl.NoQuarterState;
+import proxy.remote_proxy.state.impl.SoldOutState;
+import proxy.remote_proxy.state.impl.SoldState;
+import proxy.remote_proxy.state.impl.WinnerState;
 
 public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
 

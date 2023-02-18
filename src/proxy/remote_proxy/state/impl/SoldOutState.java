@@ -1,7 +1,7 @@
-package proxy.gumball.state.impl;
+package proxy.remote_proxy.state.impl;
 
-import proxy.gumball.GumballMachine;
-import proxy.gumball.state.State;
+import proxy.remote_proxy.GumballMachine;
+import proxy.remote_proxy.state.State;
 
 public class SoldOutState implements State {
     private static final long serialVersionUID = 2L;

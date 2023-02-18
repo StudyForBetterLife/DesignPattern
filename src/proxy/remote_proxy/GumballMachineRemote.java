@@ -1,8 +1,8 @@
-package proxy.gumball;
+package proxy.remote_proxy;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-import proxy.gumball.state.State;
+import proxy.remote_proxy.state.State;
 
 public interface GumballMachineRemote extends Remote {
   int getCount() throws RemoteException;

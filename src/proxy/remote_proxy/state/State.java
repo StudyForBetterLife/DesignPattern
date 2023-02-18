@@ -1,4 +1,4 @@
-package proxy.gumball.state;
+package proxy.remote_proxy.state;
 
 import java.io.Serializable;
 

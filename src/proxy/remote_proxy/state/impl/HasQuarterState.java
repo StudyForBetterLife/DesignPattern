@@ -1,8 +1,8 @@
-package proxy.gumball.state.impl;
+package proxy.remote_proxy.state.impl;
 
 import java.util.Random;
-import proxy.gumball.GumballMachine;
-import proxy.gumball.state.State;
+import proxy.remote_proxy.GumballMachine;
+import proxy.remote_proxy.state.State;
 
 public class HasQuarterState implements State {
 
