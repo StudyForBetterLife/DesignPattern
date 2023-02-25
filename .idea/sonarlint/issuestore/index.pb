@@ -1,0 +1,21 @@
+
+Q
+!src/iterator/IteratorPattern.java,0\7\07bc9a15323cca11c8dbd4238eb19579d9bd4948
+R
+"src/iterator/menu/vo/MenuItem.java,0\c\0c257d37ba31d5223bbeb467a3fbdbc9d49aecf5
+O
+src/iterator/iter/Iterator.java,7\2\72b16d9852d4016d27a738be7281357b6f533872
+W
+'src/iterator/menu/PancakeHouseMenu.java,9\8\982da34acb6ad1dc9ebac28a92134e41592befe2
+]
+-src/iterator/iter/impl/DinerMenuIterator.java,0\8\087a6277253a7e46f2287e41731d7b518bb2d2df
+`
+0src/iterator/iter/impl/PancakeHouseIterator.java,7\7\77e61783d7b8e6c2155216424ed5848305e1baa8
+O
+src/iterator/menu/Waitress.java,3\8\388a26faf5fd430296f4b249a87707bfb81e1b77
+K
+src/iterator/menu/Menu.java,1\3\13158a4fe110710e1a8fdc109b2d156d071ab53d
+P
+ src/iterator/menu/DinerMenu.java,9\d\9da2e887010ce1fecba6f992a6a1ead8be38630c
+?
+settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
