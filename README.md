@@ -12,7 +12,6 @@
 10. [컴포지트 패턴](https://github.com/StudyForBetterLife/DesignPattern/pull/10)
 11. [상태 패턴](https://github.com/StudyForBetterLife/DesignPattern/pull/11)
 12. [프록시 패턴](https://github.com/StudyForBetterLife/DesignPattern/pull/12)
-13. [복합 패턴]([탬플릿 패턴](https://github.com/StudyForBetterLife/DesignPattern/pull/13)
 
 </br>
 </br>
